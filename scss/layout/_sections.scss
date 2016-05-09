@@ -1,0 +1,63 @@
+
+.section-home {
+  background: linear-gradient($concrete-solid, $white);
+  padding-bottom: em(25px);
+  @include medium-screen {
+    max-width: 100%;
+    padding: em(40px) 0 em(60px);
+    background: $alabaster;
+  }
+}
+.wrapper-home {
+  @extend %margin-auto;
+  width: 85%;
+  @include medium-screen {
+    flex-direction: row-reverse;
+  }
+  @include large-screen {
+    max-width: 800px;
+  }
+}
+.section-home p {
+  color: palette(text-color, light);
+  @include medium-screen {
+    background: $alabaster;
+    margin-right: 8%;
+    text-align: left;
+  }
+  @include large-screen {
+    margin-right: 12%;
+  }
+}
+.section-home img {
+  max-width: 60%;
+  padding-bottom: 1em;
+}
+.section-portfolio {
+  @extend %margin-auto;
+  width: 90%;
+  background: $white;
+  @include medium-screen {
+    flex-wrap: wrap;
+  }
+}
+.section-documentation  {
+  @extend %margin-auto;
+  justify-content: space-around;
+  width: 90%;
+  padding-bottom: 3em;
+}
+.section-contact {
+  @extend %margin-auto;
+  width: 100%;
+  background: $alabaster;
+  padding-bottom: 2em;
+}
+.section-contact p {
+  @extend %margin-auto;
+  max-width: 90%;
+  @include medium-screen {
+    max-width: 460px;
+    margin: auto;
+  }
+}

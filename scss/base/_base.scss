@@ -1,0 +1,36 @@
+// =================================
+//  Base Element Styles
+// =================================
+
+* {
+  box-sizing: border-box;
+}
+body {
+  @include  text($base__fontsize, ($base__line/$base__fontsize), $color: palette(text-color));
+  min-height: 90vh;
+  text-align: center;
+  font-family: $font-family;
+}
+h1.uppercase {
+  @include  text($base__fontsize * 1.2, $color: palette(text-color, dark));
+  padding: em(60px) 0 em(30px);
+  text-transform: uppercase;
+}
+h2 {
+  @include  text($base__fontsize * 1.2, $weight: normal);
+  margin-bottom: 0;
+}
+img {
+  margin: 0 0 em(20px) 0;
+  width: 90%;
+}
+a {
+  text-decoration: none;
+  color: $color-link--default;
+  &:hover {
+    color: $color-link--hover !important;
+}
+  &:visited {
+    color: $color-link--visited !important;
+  }
+}

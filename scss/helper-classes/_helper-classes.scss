@@ -1,0 +1,34 @@
+.flex {
+  @include medium-screen {
+    display: flex;
+  }
+}
+
+.col {
+  @include medium-screen {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+  @include large-screen {
+    max-width: 33.3%;
+  }
+  p {
+    @include medium-screen {
+      padding: 0 15px;
+    }
+  }
+}
+
+.top {
+  @include medium-screen {
+    display: none;
+  }
+}
+
+.footer-name {
+  @include medium-screen {
+    padding-top: 3em;
+    font-size: $base__fontsize * 1.2;
+  }
+}

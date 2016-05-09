@@ -1,0 +1,16 @@
+// Center text
+
+%nav-links {
+  text-align: center;
+  display: block;
+  padding: 15px;
+  margin: 5px 0;
+  background: inherit;
+  color: $color-link--default;
+  font-size: $base__fontsize * 1.2;
+  font-weight: 500;
+}
+
+%margin-auto {
+  margin: auto;
+}

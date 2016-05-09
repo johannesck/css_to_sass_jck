@@ -1,0 +1,43 @@
+footer {
+  background: $alabaster;
+  padding: em(20px);
+  flex-direction: row;
+}
+
+.footer-wrapper {
+  flex-direction: row;
+  align-items: center;
+  width: 93%;
+  height: em(35px);
+  margin: em(35px) auto;
+  border-top: solid 1px palette(text-color, x-light);
+  @include medium-screen {
+    justify-content: space-between;
+  }
+}
+
+.footer-wrapper li {
+  margin-top: em(30px);
+}
+
+.footer-nav li a { // same as main-nav li a
+ @extend %nav-links;
+  @include medium-screen {
+    background: inherit;
+    padding-right: 0;
+    padding-top: 2.1em;
+  }
+}
+
+ul.footer-nav.flex {
+  display: none;
+
+  @include medium-screen {
+    display: flex;
+  }
+}
+
+.footer-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+}

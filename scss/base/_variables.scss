@@ -1,0 +1,50 @@
+
+// Descriptive color variables
+
+$white          : #fff;
+$concrete-solid : #f2f2f2;
+$alabaster      : #fcfcfc;
+$black          : #000;
+$grey           : #646464;
+$scooter        : #add8e6;
+$golden-grass   : #e0ab26;
+
+
+// Functional color variables
+
+$color-link--default: $grey;
+$color-link--hover: $golden-grass;
+$color-link--visited: rgba($golden-grass, .6);
+
+$color-text-body        : $grey;
+$background-body-default: $white;
+
+
+// Color Palette Modifiers
+
+$palettes: (
+  text-color: (
+    x-light : lighten($color-text-body, 40%),
+    light   : lighten($color-text-body, 16%),
+    base    : $color-text-body,
+    dark    : darken($color-text-body, 16%)
+  )
+);
+
+
+// Font stacks
+
+$font-url--google : 'https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900';
+$font-family      : 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+// Text
+$base__fontsize: 18px;
+$base__line    : 27px;
+
+
+// Media query breakpoints
+
+$break-small: 'max-width: 767px';
+$break-medium: 'min-width: 768px';
+$break-large: 'min-width: 1024px';
