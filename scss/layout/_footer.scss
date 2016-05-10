@@ -14,10 +14,13 @@ footer {
   @include medium-screen {
     justify-content: space-between;
   }
-}
-
-.footer-wrapper li {
-  margin-top: em(30px);
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    margin-top: em(30px);
+  }
 }
 
 .footer-nav li a { // same as main-nav li a
@@ -37,7 +40,3 @@ ul.footer-nav.flex {
   }
 }
 
-.footer-wrapper ul {
-  display: flex;
-  justify-content: space-between;
-}
