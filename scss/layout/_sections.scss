@@ -7,6 +7,21 @@
     padding: em(40px) 0 em(60px);
     background: $alabaster;
   }
+  p {
+    color: palette(text-color, light);
+    @include medium-screen {
+      background: $alabaster;
+      margin-right: 8%;
+      text-align: left;
+    }
+    @include large-screen {
+      margin-right: 12%;
+    }
+  }
+  img {
+    max-width: 60%;
+    padding-bottom: 1em;
+  }
 }
 .wrapper-home {
   @extend %margin-auto;
@@ -18,21 +33,7 @@
     max-width: 800px;
   }
 }
-.section-home p {
-  color: palette(text-color, light);
-  @include medium-screen {
-    background: $alabaster;
-    margin-right: 8%;
-    text-align: left;
-  }
-  @include large-screen {
-    margin-right: 12%;
-  }
-}
-.section-home img {
-  max-width: 60%;
-  padding-bottom: 1em;
-}
+
 .section-portfolio {
   @extend %margin-auto;
   width: 90%;
@@ -52,12 +53,14 @@
   width: 100%;
   background: $alabaster;
   padding-bottom: 2em;
-}
-.section-contact p {
-  @extend %margin-auto;
-  max-width: 90%;
-  @include medium-screen {
-    max-width: 460px;
-    margin: auto;
+
+  p {
+    @extend %margin-auto;
+    max-width: 90%;
+    @include medium-screen {
+      max-width: 460px;
+      margin: auto;
+    }
   }
 }
+
